@@ -1,0 +1,134 @@
+:root {
+  --Very_dark_blue: hsl(233, 47%, 7%);
+  --Dark_desaturated_blue: hsl(244, 38%, 16%);
+  --Soft_violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightly_white: hsla(0, 0%, 100%, 0.75);
+  --Slightly_transparent_white:hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--Very_dark_blue);
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 1030px;
+  height: 425px;
+  background-color: var(--Dark_desaturated_blue);
+  border-radius: 13px;
+  overflow: hidden;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  padding-left: 63px;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  width: 55%;
+}
+.card-body-title {
+  width: 94%;
+  margin-top: 1px;
+  font-size: 43px;
+}
+.card-body-title-span {
+  color: var(--Soft_violet);
+}
+.card-body-text {
+  margin-top: -10px;
+  width: 78%;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px;
+  color: var(--Slightly_transparent_white);
+}
+.card-body-box {
+  display: flex;
+  gap: 60px;
+}
+.card-body-box-a-num {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  padding-bottom: 8px;
+}
+.card-body-box-a-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 11px;
+}
+.card-boximg {
+  width: 45%;
+  background: #3f0c61;
+  opacity: 0.3;
+}
+.card-boximg img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 815px) {
+  .card {
+    width: 300px;
+    height: 600px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .card-body {
+    width: 100%;
+    height: 65%;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .card-body-title {
+    width: 67%;
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  .card-body-text {
+    text-align: center;
+    word-spacing: 2px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .card-body-box {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+  }
+  .card-body-box-a-num {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+  .card-body-box-a-text {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+  }
+  .card-boximg {
+    width: 100%;
+    height: 35%;
+    margin-top: -100px;
+  }
+}/*# sourceMappingURL=style.css.map */
